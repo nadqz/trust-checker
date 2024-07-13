@@ -1,0 +1,106 @@
+/* AboutStyle.css */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --mainColor: #0C356A;
+    --mainColorLight: #4B72A4;
+    --secondaryColor: #FFC436;
+    --textColor: #000;
+}
+
+.about-container {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 110px;
+    font-size: 20px;
+}
+
+.about-container p span {
+    font-size: 17px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.about-section {
+    max-width: 800px;
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid var(--mainColorLight);
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    font-size: 1.8em;
+    color: var(--mainColor);
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 1em;
+    color: var(--textColor);
+    line-height: 1.6;
+}
+
+.about-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.team-member {
+    width: 250px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid var(--mainColorLight);
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.2em;
+    color: var(--mainColor);
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 0.9em;
+    color: var(--textColor);
+}
+
+@media only screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 80%;
+    }
+}

@@ -1,0 +1,14 @@
+.file-info {
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+}
+
+.file-info-row,
+.file-info-row-bawah {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}

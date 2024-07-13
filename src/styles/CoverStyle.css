@@ -1,0 +1,68 @@
+/* CoverStyle.css */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --mainColor: #0C356A;
+    --mainColorLight: #4B72A4;
+    --secondaryColor: #FFC436;
+    --textColor: #000;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: calc(100vh - 80px); /* Tinggi dinamis dengan penyesuaian navbar */
+    padding: 20px;
+    margin-top: 60px;
+    margin-left: 1.5rem;
+    font-size: 23px;
+    text-align: center;
+}
+
+.kolom {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.icon-header {
+    width: 23rem;
+    height: auto;
+    margin-right: 6rem;
+}
+
+.deskripsi {
+    font-size: 1.2em;
+    color: var(--mainColor);
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 3em;
+    color: var(--mainColor);
+    margin-bottom: 15px;
+}
+
+p {
+    color: var(--mainColor);
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        padding: 10px;
+    }
+
+    .kolom {
+        max-width: 100%;
+    }
+}
