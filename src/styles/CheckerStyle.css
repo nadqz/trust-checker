@@ -8,14 +8,15 @@
 }
 
 .checker {
-    padding: 100px 20px 20px;
+    padding: 20px;
+    padding-top: 100px; /* Adjust this value based on your navbar height */
     background: #f9f9f9;
     min-height: 100vh;
 }
 
 .checker-container {
     background: #fff;
-    padding: 40px;
+    padding: 20px;
     max-width: 800px;
     margin: 0 auto;
     border-radius: 8px;
@@ -104,12 +105,14 @@ button:hover {
 .file-details {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
 .file-info {
     flex: 1;
-    margin: 0 10px;
+    margin: 10px;
+    min-width: 300px;
 }
 
 .file-info h2 {
@@ -119,18 +122,15 @@ button:hover {
 
 .file-info-row {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin-bottom: 10px;
 }
 
 .file-info-row label {
-    flex: 1;
-    text-align: left;
-    margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 .file-info-row input {
-    flex: 2;
     border: 1px solid #ccc;
     padding: 5px;
     border-radius: 3px;
@@ -154,4 +154,41 @@ button:hover {
 .error {
     margin-top: 20px;
     color: red;
+}
+
+@media (max-width: 768px) {
+    .checker-container {
+        padding: 20px;
+    }
+
+    .checker-upload-container {
+        flex-direction: column;
+    }
+
+    .upload-section {
+        margin: 10px 0;
+    }
+
+    .file-details {
+        flex-direction: column;
+    }
+
+    .file-info {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .checker-container {
+        padding: 10px;
+    }
+
+    .upload-section {
+        padding: 10px;
+    }
+
+    .dropzone button,
+    button {
+        padding: 8px 16px;
+    }
 }
