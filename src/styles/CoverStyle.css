@@ -22,8 +22,7 @@
     flex-direction: row;
     height: calc(100vh - 80px); /* Tinggi dinamis dengan penyesuaian navbar */
     padding: 20px;
-    margin-top: 60px;
-    margin-left: 1.5rem;
+    margin-top: 80px; /* Adjust margin-top to consider the navbar height */
     font-size: 23px;
     text-align: center;
 }
@@ -57,12 +56,81 @@ p {
     color: var(--mainColor);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
     .wrapper {
-        padding: 10px;
+        flex-direction: column;
+        height: auto;
+        margin-top: 80px; /* Consider the navbar height */
+    }
+
+    .icon-header {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
     .kolom {
-        max-width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    .deskripsi {
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        padding: 20px;
+    }
+
+    .icon-header {
+        width: 80%;
+    }
+
+    .kolom {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .deskripsi {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .wrapper {
+        padding: 20px;
+    }
+
+    .icon-header {
+        width: 100%;
+    }
+
+    .kolom {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .deskripsi {
+        font-size: 0.9em;
+    }
+
+    p {
+        font-size: 0.8em;
     }
 }
