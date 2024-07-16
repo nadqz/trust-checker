@@ -30,7 +30,7 @@ const Checker = () => {
         formData.append('file2', file2);
 
         try {
-            const response = await axios.post('https://greeneye.hamami.cloud/compare', formData);
+            const response = await axios.post('http://20.198.216.87/compare', formData);
             setComparisonResult(response.data);
             setError('');
         } catch (error) {
